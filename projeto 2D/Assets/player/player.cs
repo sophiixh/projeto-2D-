@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     
     public float velocidade = 40;
     public float forcaDoPulo = 4;
+    public int MoedasColetadas;
+
     
     private bool noChao = false;
     private bool andando = false;
@@ -79,6 +81,10 @@ public class Player : MonoBehaviour
         {
             noChao = true;
         }
+    }
+    public void GanharMoedas()
+    {
+        MoedasColetadas += 1;
     }
 
 }
